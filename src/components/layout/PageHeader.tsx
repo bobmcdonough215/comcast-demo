@@ -39,6 +39,8 @@ export default function PageHeader({
   targetQueries,
 }: PageHeaderProps) {
   const ts = tierStyles[tier];
+  const isQuestionH1 = /^(How|What|Does|Can|Why|Is|Do|Should|Which|Where|When)\b/.test(h1) || h1.endsWith('?');
+  const h1CardId = isQuestionH1 ? 'h1-question' : 'h1-statement';
 
   return (
     <header className="mb-8">
@@ -53,7 +55,7 @@ export default function PageHeader({
       </div>
 
       {/* H1 */}
-      <HoverTrigger cardId="h1-format">
+      <HoverTrigger cardId={h1CardId}>
         <h1 className="text-3xl md:text-4xl font-heading font-bold text-white leading-tight mb-4">
           {h1}
         </h1>

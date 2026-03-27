@@ -64,11 +64,17 @@ export const hoverCards: Record<string, HoverCardData> = {
     title: 'SEO: URL Architecture',
     body: 'Clean, keyword-rich URL with logical hierarchy: /learn/business-internet/speed-guide. Each segment reinforces the topic cluster relationship to Google\'s crawler. No parameters, no session IDs, no dates that will age out. This URL is readable by humans and machines equally.',
   },
-  'h1-format': {
-    id: 'h1-format',
+  'h1-question': {
+    id: 'h1-question',
     category: 'seo',
     title: 'SEO: H1 as Question',
     body: 'The H1 is phrased as a question that matches the primary search query. When a heading matches a natural language query, the section it leads is far more likely to be extracted as a standalone answer by AI systems. "Speed Options" tells AI nothing. "How Much Speed Does Your Business Need?" matches thousands of monthly queries.',
+  },
+  'h1-statement': {
+    id: 'h1-statement',
+    category: 'seo',
+    title: 'SEO: H1 as Authority Statement',
+    body: 'This H1 uses a keyword-rich statement format rather than a question — intentional for pillar pages, hubs, verticals, and tools. Statement H1s signal topic ownership: "Business Internet: The Complete Guide" tells Google this page is the definitive resource, not just one answer. Question-format H1s work for spokes targeting specific queries; statement H1s work for pages that own an entire topic.',
   },
   'heading-hierarchy': {
     id: 'heading-hierarchy',
