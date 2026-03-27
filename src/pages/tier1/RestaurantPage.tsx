@@ -152,7 +152,7 @@ export default function RestaurantPage() {
         <p className="text-sm text-slate-300 leading-relaxed mb-4">
           Security cameras are upload-intensive, not download-intensive. Each 4K camera streaming to cloud storage uses 5&ndash;20 Mbps of upload bandwidth. A restaurant with four cameras needs 40&ndash;80 Mbps of upload speed &mdash; a requirement that most standard business internet plans struggle to meet, since plans typically emphasize download speed over upload.
         </p>
-        <HoverTrigger cardId="problem-first-framing">
+        <HoverTrigger cardId="dia-upsell">
           <p className="text-sm text-slate-300 leading-relaxed">
             If your camera system cannot upload footage fast enough, you get choppy recordings with gaps &mdash; exactly the moments you need to review when an incident occurs. For restaurants with extensive camera coverage, consider a plan with higher upload speeds or <a href="/learn/business-internet/dedicated-vs-shared" className="text-cyan hover:text-white transition-colors">Dedicated Internet Access (DIA)</a> for symmetrical upload and download bandwidth.
           </p>
