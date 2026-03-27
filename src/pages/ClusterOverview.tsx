@@ -3,7 +3,10 @@ import AppLayout from '../components/layout/AppLayout';
 import HoverLegend from '../components/hover/HoverLegend';
 import HoverTrigger from '../components/hover/HoverTrigger';
 import { clusterMap } from '../data/clusterMap';
+import { pageInventory } from '../data/pageInventory';
 import type { ClusterNode } from '../types';
+
+const builtUrls = new Set(pageInventory.filter(p => p.built).map(p => p.url));
 
 const tierConfig: Record<number, { dot: string; border: string; label: string }> = {
   1: { dot: 'bg-green-400', border: 'border-green-400/30', label: 'T1' },
@@ -26,7 +29,7 @@ const typeColors: Record<string, string> = {
 
 function ClusterNode({ node, depth = 0 }: { node: ClusterNode; depth?: number }) {
   const tc = tierConfig[node.tier];
-  const isBuilt = node.tier === 1;
+  const isBuilt = builtUrls.has(node.url);
 
   return (
     <div style={{ marginLeft: depth > 0 ? '24px' : '0' }}>

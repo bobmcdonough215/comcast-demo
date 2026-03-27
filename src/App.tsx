@@ -37,6 +37,7 @@ import HotelsPage from './pages/tier2/HotelsPage';
 import ComcastVsATTPage from './pages/tier2/ComcastVsATTPage';
 import PageInventoryPage from './pages/PageInventory';
 import StubPage from './pages/tier2-3/StubPage';
+import AuthGate from './components/AuthGate';
 
 function ScrollToTop() {
   useScrollToTop();
@@ -45,6 +46,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
+    <AuthGate>
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
@@ -92,5 +94,6 @@ export default function App() {
         <Route path="/about/:slug" element={<StubPage />} />
       </Routes>
     </BrowserRouter>
+    </AuthGate>
   );
 }
