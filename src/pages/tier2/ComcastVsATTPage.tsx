@@ -127,11 +127,13 @@ export default function ComcastVsATTPage() {
       </section>
 
       <section className="mb-8">
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

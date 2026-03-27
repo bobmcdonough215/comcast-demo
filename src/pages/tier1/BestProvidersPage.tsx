@@ -128,13 +128,15 @@ export default function BestProvidersPage() {
         <p className="text-sm text-slate-300 leading-relaxed mb-4">
           These are not marketing claims &mdash; they are verifiable, third-party-validated data points that demonstrate Comcast Business&rsquo;s commitment to enterprise-grade reliability. For businesses evaluating providers, infrastructure investment is a leading indicator of long-term network quality and innovation.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>#1 U.S. SD-WAN Provider &mdash; Vertical Systems Group 2024</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>#1 U.S. SD-WAN Provider &mdash; Vertical Systems Group 2024</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

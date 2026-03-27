@@ -136,13 +136,15 @@ export default function WiFiProPage() {
         <p className="text-sm text-slate-300 leading-relaxed">
           This capacity is critical for businesses with high device density &mdash; restaurants where every table has customers on their phones, retail stores with dozens of IoT sensors and employee handhelds, or co-working spaces where every desk has multiple connected devices. WiFi Pro&rsquo;s enterprise-grade hardware handles this density without the dropped connections and slow speeds that plague consumer routers under heavy load.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>WiFi &amp; Devices &mdash; Add-on product page</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>WiFi &amp; Devices &mdash; Add-on product page</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

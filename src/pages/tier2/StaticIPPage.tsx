@@ -134,13 +134,15 @@ export default function StaticIPPage() {
         <p className="text-sm text-slate-300 leading-relaxed">
           Comcast Business plans include at least one static IP. <a href="/learn/business-internet/dedicated-internet" className="text-cyan hover:text-white transition-colors">Dedicated Internet Access (DIA)</a> plans include a larger block by default, along with symmetrical speeds and a contractual SLA &mdash; making them the best choice for businesses with multiple static IP requirements.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>Business Internet Glossary</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>Business Internet Glossary</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

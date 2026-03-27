@@ -134,13 +134,15 @@ export default function MbpsGbpsPage() {
         <p className="text-sm text-slate-300 leading-relaxed">
           At the Gbps level, connection type matters as much as raw speed. A shared 1 Gbps plan may deliver only 400&ndash;600 Mbps during peak hours due to congestion. A <a href="/learn/business-internet/dedicated-vs-shared" className="text-cyan hover:text-white transition-colors">dedicated 1 Gbps plan</a> delivers the full gigabit consistently because the connection is unshared. For businesses investing in Gbps-class speeds, dedicated internet maximizes the return on that investment.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>Business Internet Glossary</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>Business Internet Glossary</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

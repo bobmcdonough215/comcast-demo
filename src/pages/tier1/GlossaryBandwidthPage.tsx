@@ -126,13 +126,15 @@ export default function GlossaryBandwidthPage() {
         <p className="text-sm text-slate-300 leading-relaxed mb-4">
           This is the core trade-off between shared and dedicated internet. Shared plans are more affordable but subject to congestion. Dedicated Internet Access (DIA) eliminates congestion entirely by giving your business a private, unshared connection. With DIA, your speed consistently matches your bandwidth because no one else is using your lanes.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>Business Internet Glossary</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>Business Internet Glossary</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

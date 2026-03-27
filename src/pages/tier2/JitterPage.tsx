@@ -133,13 +133,15 @@ export default function JitterPage() {
         <p className="text-sm text-slate-300 leading-relaxed">
           For businesses running 10+ VoIP lines, hosting video conferences with clients, or operating real-time collaboration platforms, dedicated internet is the most reliable way to eliminate jitter. Combined with QoS for internal traffic management, it provides the consistent packet delivery that real-time applications require.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>Business Internet Glossary</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>Business Internet Glossary</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">

@@ -134,13 +134,15 @@ export default function LatencyPage() {
         <p className="text-sm text-slate-300 leading-relaxed">
           For ongoing monitoring, many business routers provide latency dashboards. If your average latency during business hours exceeds 50ms and you rely on VoIP or video conferencing, consider upgrading to a plan with lower contention ratios or switching to dedicated internet for guaranteed performance.
         </p>
-        <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
-          <span>Written by the Comcast Business Network Solutions Team</span>
-          <span>&middot;</span>
-          <span>Last reviewed: March 2026</span>
-          <span>&middot;</span>
-          <span>Business Internet Glossary</span>
-        </div>
+        <HoverTrigger cardId="eeat-signals">
+          <div className="text-xs text-slate-500 mb-4 flex flex-wrap items-center gap-3">
+            <span>Written by the Comcast Business Network Solutions Team</span>
+            <span>&middot;</span>
+            <span>Last reviewed: March 2026</span>
+            <span>&middot;</span>
+            <span>Business Internet Glossary</span>
+          </div>
+        </HoverTrigger>
       </section>
 
       <HoverTrigger cardId="internal-links">
