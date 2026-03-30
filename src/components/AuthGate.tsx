@@ -1,17 +1,28 @@
 import { useState, type ReactNode, type FormEvent } from 'react';
 
-const PASSCODE = 'comcast-demo';
+const PASSCODE_HASH = '2c2f83d647ddcaab50945ed4feed0d718adfdfeb3e3d523310f0527f0a074af7';
 const SESSION_KEY = 'comcast-demo-auth';
 
+async function sha256(message: string): Promise<string> {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
 export default function AuthGate({ children }: { children: ReactNode }) {
-  const [authed, setAuthed] = useState(() => sessionStorage.getItem(SESSION_KEY) === 'true');
+  const [authed, setAuthed] = useState(() => {
+    const stored = sessionStorage.getItem(SESSION_KEY);
+    return stored === PASSCODE_HASH;
+  });
   const [input, setInput] = useState('');
   const [error, setError] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (input === PASSCODE) {
-      sessionStorage.setItem(SESSION_KEY, 'true');
+    const hash = await sha256(input);
+    if (hash === PASSCODE_HASH) {
+      sessionStorage.setItem(SESSION_KEY, PASSCODE_HASH);
       setAuthed(true);
     } else {
       setError(true);
